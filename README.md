@@ -18,7 +18,7 @@ Model frame as the following picture:
 ![](./figure/model_frame.jpg)
 
 ## QA System Web Server
-We use Flask to build a background server, and write a front-end page. Our model deploy on the background server. User can input their question, our system will return a answer.  
+We use Flask to build a background server, and write a front-end page. Our model deployed on the background server. User can input their question, our system will return a answer.  
 The front-end page as the following picture:
 ![](./figure/front-end_page.jpg)
 
