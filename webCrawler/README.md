@@ -8,9 +8,10 @@ these codes are used for crawler Q&A pair from some website
 + requests               2.19.1 
 + beautifulsoup4         4.6.0  
 
-# How run
+# How to run
 ~~~
     python3 ./main_run.py 
 ~~~
+
 # Notice
 Maybe can't work in one day =.=~~

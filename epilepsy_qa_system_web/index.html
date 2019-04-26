@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Epilepsy Q&A Server</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+
+					<span class="title p-b-20">
+						“癫痫”疾病问答服务
+					</span>
+
+					<span class="login100-form-title p-b-10">
+						Question
+					</span>
+					<div class="wrap-input100 rs1-wrap-input400 validate-input m-b-20">
+						<input id="q" class="input100" type="text" name="question">
+						<span class="focus-input100"></span>
+					</div>
+
+					<span class="login100-form-title p-b-10">
+						Question Detailed
+					</span>
+					<div class="wrap-input100 rs1-wrap-input400 validate-input m-b-20">
+						<input id="q_detailed" class="input100" type="text" name="question_detailed" placeholder="optional">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="container-login100-form-btn m-b-80">
+						<button class="login100-form-btn" onclick="sub()" type="button">
+							submit
+						</button>
+					</div>
+
+					<span class="login100-form-title p-b-10">
+						Answer
+					</span>
+					<div class="wrap-input100 rs1-wrap-input200 validate-input m-b-20">
+						<textarea id="ans" rows="15" cols="44"></textarea>
+					</div>
+
+				</form>
+
+				<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function sub(){
+			var dataTemp = {}
+			dataTemp.q = $('input[name=question]').val();
+			dataTemp.q_detailed = $('input[name=question_detailed]').val();
+			$.ajax({
+					cache: true,
+					type: "POST",
+					url:"/sendData",
+					data: dataTemp,// 你的formid
+					async: false,
+					error: function(request) {
+						alert("Connection error:"+request.error);
+					},
+					success: function(data) {
+						$("#ans").val(data)
+					}
+				});
+		}
+
+	</script>
+</body>
+</html>
