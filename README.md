@@ -1,5 +1,5 @@
 # Epilepsy QA System
-
+![](https://img.shields.io/badge/python-3.6-green.svg)
 ## Data source
 We collected epilepsy data by use web crawler from some website, the form of raw data as follow:
 ~~~
