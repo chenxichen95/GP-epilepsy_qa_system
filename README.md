@@ -1,5 +1,5 @@
 # Epilepsy QA System
-![](https://img.shields.io/badge/python-3.6-green.svg) ![](https://img.shields.io/badge/tensorflow-1.8.0-brightgreen.svg) ![](https://img.shields.io/badge/Flask-1.0.2-yellowgreen.svg)
+![](https://img.shields.io/badge/python-3.6-green.svg) ![](https://img.shields.io/badge/tensorflow-1.9.0-brightgreen.svg) ![](https://img.shields.io/badge/Flask-1.0.2-yellowgreen.svg)
 ## Data source
 We collected epilepsy data by use web crawler from some website, the form of raw data as follow:
 ~~~
