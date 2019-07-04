@@ -33,3 +33,4 @@ if __name__ == "__main__":
     TextPreprocessing.jsonSave(dataset_test, f'{dataPath}/dataset_test.json')
     TextPreprocessing.jsonSave(illnessSet_noEpilepsy + illnessSet_epilepsy, f'{dataPath}/datasetForW2V.json')
     TextPreprocessing.jsonSave(illnessSet_epilepsy, f'{dataPath}/epilepsyTrueAns_pool.json')
+    print(os.getcwd())

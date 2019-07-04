@@ -7,7 +7,7 @@ build q&a model, use data/dataset_trainAndDev.json to train model, use data/data
 
 # How to run
 ~~~
-    python3 ./main_run.py --batch --epoch --hidden_units --hops --embeddingSize --dropout --lr --display_steps
+    python3 ./main_run.py --batch=20 --epoch=10 --hidden_units=80 --hops=3 --embeddingSize=150 --dropout=0.0 --lr=0.001 --display_steps=1
 ~~~
 
 # Model illustration
